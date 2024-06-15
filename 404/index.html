@@ -1,26 +1,10 @@
-<!DOCTYPE html>
-<!-- 
-Theme by Mashiro
-                      /^--^\     /^--^\     /^--^\
-                      \____/     \____/     \____/
-                     /      \   /      \   /      \
-                    |        | |        | |        |
-                     \__  __/   \__  __/   \__  __/
-|^|^|^|^|^|^|^|^|^|^|^|^\ \^|^|^|^/ /^|^|^|^|^\ \^|^|^|^|^|^|^|^|^|^|^|^|
-| | | | | | | | | | | | |\ \| | |/ /| | | | | | \ \ | | | | | | | | | | |
-########################/ /######\ \###########/ /#######################
-| | | | | | | | | | | | \/| | | | \/| | | | | |\/ | | | | | | | | | | | |
-|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|
-
---><html lang="zh-CN">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-<title itemprop="name">御坂19008号の渗透小屋</title>
-<link rel="shortcut icon" href="https://misaka19008.github.io/wp-content/themes/Sakura/images/favicon.ico"> 
-<meta name="theme-color" content="#31363b">
-<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="https://misaka19008.github.io/wp-content/themes/Sakura/images/favicon.ico">
+<title itemprop="name">未找到页面 &#8211; 御坂19008号の渗透小屋</title>
+<link type="text/css" media="all" href="https://cdn.jsdelivr.net/gh/moezx/cdn@3.2.2/css/lib.css" rel="stylesheet">
 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
 <link rel="stylesheet" id="wp-block-library-css" href="https://misaka19008.github.io/wp-includes/css/dist/block-library/style.min.css?ver=6.5.4" type="text/css" media="all">
@@ -132,7 +116,7 @@ mashiro_option.skin_bg7 = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.2/other-sit
 
 mashiro_option.darkmode = true;
 
-mashiro_option.land_at_home = true;
+mashiro_option.land_at_home = false;
 
 mashiro_option.baguetteBoxON = false;
 
@@ -147,314 +131,40 @@ mashiro_option.cover_api = "https://misaka19008.github.io/wp-json/sakura/v1/imag
 
 mashiro_option.windowheight = /Mobile|Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? 'fixed' : 'auto';
 /*End of Initial Variables*/</script>
-<script type="text/javascript">if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
-  alert('朋友，IE浏览器未适配哦~\n如果是 360、QQ 等双核浏览器，请关闭 IE 模式！');
+<script>var the_url=window.location.href;
+var the_dom="www.liyue-cyberarmy.mil";
+var no_report = false;
+if (the_dom!= '2heng.xin') {
+    no_report = true;
 }
-function setBg(){
-    //var url = "https://raw.githubusercontent.com/misaka19008/misaka19008-blog-cache/main/manifest/manifest.json";
-    var url="https://gcore.jsdelivr.net/gh/misaka19008/misaka19008-blog-cache@latest/manifest/manifest.json"
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", url, true);
-    xhr.send();
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            json_data = JSON.parse(xhr.responseText);
-            var imglist = new Array();
-            Object.values(json_data).forEach(val => {imglist.push(val.webp[0])});
-            myDiv = document.getElementById("centerbg");
-            myDiv.style.backgroundImage = "url('https://gcore.jsdelivr.net/gh/misaka19008/misaka19008-blog-cache@latest/manifest/" + imglist[Math.floor(Math.random()*((imglist.length-1) - 0 + 1))+0] + "')";
-        }
-    };
+var the_ua=navigator.userAgent;
+var the_ref=document.referrer;
+function httpGet(theUrl) {
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
 }
-window.onload = function () {
-    setBg()
-}</script>
-<script src="https://misaka19008.github.io/wp-content/themes/Sakura/js/setBg.js"></script>
+var report_url = "https://api.mashiro.top/count/404/?" + "url="+the_url+"&ua="+the_ua+"&ref="+the_ref;
+if (!no_report) httpGet(report_url);</script>
 </head>
-<body class="home blog hfeed chinese-font  ">
-	<div class="scrollbar" id="bar"></div>
-	<section id="main-container">
-				<div class="headertop filter-nothing">
-			<figure id="centerbg" class="centerbg" style="background-image:none;">
-	<div class="focusinfo">
-        	     <div class="header-tou"><a href="https://misaka19008.github.io/"><img src="https://misaka19008.github.io/wp-content/uploads/2024/06/misaka.jpg"></a></div>
-	  			<div class="header-info">
-            <p>哪个御坂妹妹是渗透菜鸡啊，do，御坂自嘲说道</p>
-                    </div>
-        		<div class="top-social">
-		<li id="bg-pre" onclick="setBg()"><img class="flipx" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/next-b.svg"></li>
-				<li><a href="https://github.com/icewolf-sec/" target="_blank" class="social-github" title="github"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/github.png"></a></li>
-			
-					
-			
-						<li class="wechat">
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/wechat.png"></a>
-			<div class="wechatInner">
-				<img src="https://misaka19008.github.io/wp-content/uploads/2024/06/cgi-bin_mmwebwx-bin_webwxgetmsgimg-MsgID8474695708577891128skey@crypt_e6c7b24_f359f894a64597caeb9f810e9afe88d3mmweb_appidwx_webfilehelper.jpg" alt="WeChat">
-			</div>
-		</li>
-		 
-			
-				<li><a href="https://space.bilibili.com/3546678869101076" target="_blank" class="social-bili" title="bilibili"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/bilibili.png"></a></li>
-									
-			
-					
-				
-				<li><a onclick="mail_me()" class="social-wangyiyun" title="E-mail"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/email.svg"></a></li>
-			
-		<li id="bg-next" onclick="setBg()"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/next-b.svg"></li>	
-	  	</div>
-        	</div>
-	</figure>
-<div id="video-container" style="display:none;">
-<video id="bgvideo" class="video" video-name="" width="auto" preload="auto"></video><div id="video-btn" class="loadvideo videolive"></div>
-<div id="video-add"></div>
-<div class="video-stu"></div>
-</div>		</div>	
-				<div id="page" class="site wrapper">
-			<header class="site-header no-select" role="banner">
-				<div class="site-top">
-					<div class="site-branding">
-												<span class="site-title">
-							<span class="logolink serif">
-								<a href="https://misaka19008.github.io/">
-									<span class="site-name"></span>
-								</a>
-							</span>
-						</span>	
-						<!-- logo end -->
-					</div>
-<!-- .site-branding -->
-					  <div class="header-user-avatar">
-    <a href="https://misaka19008.github.io/wp-login.php">
-      <img class="faa-shake animated-hover" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/none.png" width="30" height="30">
-    </a>
-    <div class="header-user-menu">
-      <div class="herder-user-name no-logged">Whether to <a href="https://misaka19008.github.io/wp-login.php" target="_blank" style="color:#333;font-weight:bold;text-decoration:none">log in</a> now?
-      </div>
-    </div>
-  </div>
-  					<div class="lower">						<nav><div class="menu"></div>
-</nav><!-- #site-navigation -->
-					</div>	
-				</div>
-			</header><!-- #masthead -->
-			<div class="blank"></div>		    <div id="content" class="site-content">
-   
-   	
-	<div class="top-feature-row">
-    <h1 class="fes-title" style="font-family: 'Ubuntu', sans-serif;">
-<i class="fa fa-anchor" aria-hidden="true"></i> 御坂妹妹の专栏</h1>
-    <div class="top-feature-v2">
-        <div class="the-feature square from_left_and_right">
-            <a href="https://misaka19008.github.io/vulnhub_notes" target="_blank">
-                <div class="img"><img src="https://misaka19008.github.io/wp-content/uploads/2024/06/1611225779_60095ab3551087dc96d98.jpg"></div>
-                <div class="info">
-                    <h3>Vulnhub_Notes</h3>
-                    <p>Vulnhub靶机通关合集</p>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="top-feature-v2">
-        <div class="the-feature square from_left_and_right" style="margin: 0 4.5px">
-            <a href="https://misaka19008.github.io/htb_notes" target="_blank">
-                <div class="img"><img src="https://misaka19008.github.io/wp-content/uploads/2024/06/Hack-The-Box-logo.png"></div>
-                <div class="info">
-                    <h3>HTB_Notes</h3>
-                    <p>HackTheBox靶机通关合集</p>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="top-feature-v2">
-        <div class="the-feature square from_left_and_right">
-            <a href="https://misaka19008.github.io/misc_article" target="_blank">
-                <div class="img"><img src="https://misaka19008.github.io/wp-content/uploads/2024/06/OIP.jpg"></div>
-                <div class="info">
-                    <h3>一些杂项博客</h3>
-                    <p>是一些奇奇怪怪的文章呢</p>
-                </div>
-            </a>
-        </div>
-    </div>
+<body class="error404 hfeed chinese-font  ">
+<section class="error-404 not-found">
+<div class="error-img">
+<div class="anim-icon" id="404" style="height: 66%;"></div>
 </div>
-	
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">	
-		<h1 class="main-title" style="font-family: 'Ubuntu', sans-serif;">
-<i class="fa fa-envira" aria-hidden="true"></i> Discovery</h1>
-			<article class="post post-list-thumb  post-list-show" itemscope="" itemtype="http://schema.org/BlogPosting">
-		<div class="post-thumb">
-			<a href="https://misaka19008.github.io/2024/06/13/new-info/"><img class="lazyload" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.1/img/svg/loader/orange.progress-bar-stripe-loader.svg" data-src="https://misaka19008.github.io/wp-json/sakura/v1/image/feature?700"></a>
-		</div>
-<!-- thumbnail-->
-		<div class="post-content-wrap">
-			<div class="post-content">
-				<div class="post-date">
-					<i class="iconfont icon-time"></i>发布于 2 天前									</div>
-				<a href="https://misaka19008.github.io/2024/06/13/new-info/" class="post-title"><h3>New info</h3></a>
-				<div class="post-meta">
-					<span><i class="iconfont icon-attention"></i>18 热度</span>
-					<span class="comments-number"><i class="iconfont icon-mark"></i><span><span class="screen-reader-text">New info</span>已关闭评论</span></span>
-					<span><i class="iconfont icon-file"></i><a href="https://misaka19008.github.io/uncategorized/">未分类</a>
-					</span>
-				</div>
-				<div class="float-content">
-					<p>主机名: DESKTOP-NUJ12V3 OS 名称: Microsoft Windows 11 专业工作站版 OS 版本: 10 &#8230;</p>					<div class="post-bottom">
-						<a href="https://misaka19008.github.io/2024/06/13/new-info/" class="button-normal"><i class="iconfont icon-caidan"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</article>
-	<article class="post post-list-thumb  post-list-show" itemscope="" itemtype="http://schema.org/BlogPosting">
-		<div class="post-thumb">
-			<a href="https://misaka19008.github.io/2024/06/13/test-page/"><img class="lazyload" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.1/img/svg/loader/orange.progress-bar-stripe-loader.svg" data-src="https://misaka19008.github.io/wp-json/sakura/v1/image/feature?728"></a>
-		</div>
-<!-- thumbnail-->
-		<div class="post-content-wrap">
-			<div class="post-content">
-				<div class="post-date">
-					<i class="iconfont icon-time"></i>发布于 2 天前									</div>
-				<a href="https://misaka19008.github.io/2024/06/13/test-page/" class="post-title"><h3>Test page</h3></a>
-				<div class="post-meta">
-					<span><i class="iconfont icon-attention"></i>32 热度</span>
-					<span class="comments-number"><i class="iconfont icon-mark"></i><span><span class="screen-reader-text">Test page</span>已关闭评论</span></span>
-					<span><i class="iconfont icon-file"></i><a href="https://misaka19008.github.io/uncategorized/">未分类</a>
-					</span>
-				</div>
-				<div class="float-content">
-					<p>This is a test page for WordPress. WordPress Offical Website</p>
-					<div class="post-bottom">
-						<a href="https://misaka19008.github.io/2024/06/13/test-page/" class="button-normal"><i class="iconfont icon-caidan"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</article>
-				</main><!-- #main -->
-				<nav class="navigator">
-				</nav>
-			</div>
-<!-- #primary -->
-	</div>
-<!-- #content -->
-		</div>
-<!-- #page Pjax container-->
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info" theme-info="Sakura v3.4.0">
-			<div class="footertext">
-				<div class="img-preload">
-					<img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/wordpress-rotating-ball-o.svg">
-					<img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/disqus-preloader.svg">
-				</div>
-				<p style="color: #666666;">Published By @misaka19008.</p>
-			</div>
-			<div class="footer-device">
-			<p style="font-family: 'Ubuntu', sans-serif;">
-					<span style="color: #b9b9b9;">
-												Theme <a href="https://2heng.xin/theme-sakura/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>
-					</span>
-				</p>
-			</div>
-		</div>
-<!-- .site-info -->
-	</footer><!-- #colophon -->
-	<div class="openNav no-select">
-		<div class="iconflat no-select">	 
-			<div class="icon"></div>
-		</div>
-		<div class="site-branding">
-						<h1 class="site-title"><a href="https://misaka19008.github.io/">御坂19008号の渗透小屋</a></h1>
-					</div>
-	</div>
-<!-- m-nav-bar -->
-	</section><!-- #section -->
-	<!-- m-nav-center -->
-	<div id="mo-nav">
-		<div class="m-avatar">
-						<img src="https://misaka19008.github.io/wp-content/uploads/2024/06/misaka.jpg">
-		</div>
-		<div class="m-search">
-			<form class="m-search-form" method="get" action="https://misaka19008.github.io" role="search">
-				<input class="m-search-input" type="search" name="s" placeholder="搜索..." required>
-			</form>
-		</div>
-		<div class="menu"></div>
-	</div>
-<!-- m-nav-center end -->
-	<a class="cd-top faa-float animated "></a>
-	<button id="moblieGoTop" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
-	<button id="moblieDarkLight"><i class="fa fa-moon-o" aria-hidden="true"></i></button>
-	<!-- search start -->
-	<form class="js-search search-form search-form--modal" method="get" action="https://misaka19008.github.io" role="search">
-		<div class="search-form__inner">
-					<div class="micro">
-				<p class="micro mb-">想要找点什么呢？</p>
-				<i class="iconfont icon-search"></i>
-				<input class="text-input" type="search" name="s" placeholder="搜索" required>
-			</div>
-				</div>
-		<div class="search_close"></div>
-	</form>
-	<!-- search end -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.4.0/cdn/js/lib.min.js?ver=3.4.0" id="js_lib-js"></script>
-<script type="text/javascript" id="app-js-extra">
-/* <![CDATA[ */
-var Poi = {"pjax":"","movies":"close","windowheight":"auto","codelamp":"close","ajaxurl":"https:\/\/misaka19008.github.io\/wp-admin\/admin-ajax.php","order":"asc","formpostion":"bottom","reply_link_version":"new","api":"https:\/\/misaka19008.github.io\/wp-json\/","nonce":"fd84b7591c","google_analytics_id":"","gravatar_url":"gravatar.2heng.xin\/avatar"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.4.0/js/sakura-app.min.js?ver=3.4.0" id="app-js"></script>
-<div class="changeSkin-gear no-select" style="bottom: -999px;">
-    <div class="keys">
-        <span id="open-skinMenu">
-		<i class="iconfont icon-gear inline-block rotating"></i>&nbsp; 切换主题 | SCHEME TOOL 
-        </span>
-    </div>
+<div class="err-button back">
+<a id="golast" href="javascript:history.go(-1);">返回上一页</a>
+<a id="gohome" href="https://misaka19008.github.io/">返回首页</a>  
 </div>
-<div class="skin-menu no-select">
-    <div class="theme-controls row-container">
-        <ul class="menu-list">
-            <li id="white-bg">
-                <i class="fa fa-television" aria-hidden="true"></i>
-            </li>
-<!--Default-->
-            <li id="sakura-bg">
-                <i class="iconfont icon-sakura"></i>
-            </li>
-<!--Sakura-->
-            <li id="gribs-bg">
-                <i class="fa fa-slack" aria-hidden="true"></i>
-            </li>
-<!--Grids-->
-            <li id="KAdots-bg">
-                <i class="iconfont icon-dots"></i>
-            </li>
-<!--Dots-->
-            <li id="totem-bg">
-                <i class="fa fa-superpowers" aria-hidden="true"></i>
-            </li>
-<!--Orange-->
-            <li id="pixiv-bg">
-                <i class="iconfont icon-pixiv"></i>
-            </li>
-<!--Start-->
-            <li id="bing-bg">
-                <i class="iconfont icon-bing"></i>
-            </li>
-<!--Bing-->
-            <li id="dark-bg">
-                <i class="fa fa-moon-o" aria-hidden="true"></i>
-            </li>
-<!--Night-->
-        </ul>
-    </div>
-    <div class="font-family-controls row-container">
-        <button type="button" class="control-btn-serif selected" data-mode="serif" onclick="mashiro_global.font_control.change_font()">Serif</button>
-        <button type="button" class="control-btn-sans-serif" data-mode="sans-serif" onclick="mashiro_global.font_control.change_font()">Sans Serif</button>
-    </div>
+<div style="display:block; width:284px;margin: auto;">
+<p style="margin-bottom: 1em;margin-top: 1.5em;text-align: center;font-size: 15px;">别着急，试试站内检索？</p>
+<form class="s-search" method="get" action="/" role="search">
+    <i class="iconfont icon-search" style="bottom: 8px;left: 12px;"></i>
+    <input class="text-input" style="padding: 8px 20px 8px 46px;" type="search" name="s" placeholder="Search..." required>	
+</form>
 </div>
-<canvas id="night-mode-cover"></canvas>
+</section>
+<script src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.5/js/other/404.min.js" type="text/javascript"></script>
 </body>
 </html>
